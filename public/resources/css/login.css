@@ -1,0 +1,81 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sjcbi{
+  height: 150px;
+  width: 150px;
+  margin-left: 35%;
+}
+.log-in-card h1{
+  font-family: Verdana, sans-serif;
+  text-align:center;
+  font-size: 25px;
+}
+.log-in-card form{
+    width: 300px;
+    background: white;
+    padding: 4rem;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 10%;
+    color: #5E7C2A;
+    font-family: Verdana, sans-serif;
+}
+.log-in-form input{
+    border: none;
+    outline: 1px;
+    background: #eee;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    width: 80%;
+    transition:.5s;
+    margin: 7px;  
+}
+.log-in-form input:focus{
+  background: white;
+}
+.button_login button {
+    background: #5E7C2A;
+    color: white;
+    padding: 1rem;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: .5s;
+    width: 80%;
+    border: none;
+    margin: 20px;
+    margin-left: 10%;
+}
+.button_login button:hover{
+  background-color: darkgreen;
+  cursor: pointer;
+}
+.log-in-form h2{
+  text-align: center;
+  height: 50px;
+}
+.log-in-card a{
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size:13px;
+  text-decoration: none;
+  color: darkgreen;
+}
+.log-in-card a:hover {
+    text-decoration: underline;
+}
+.log-in-card input[type="checkbox"] {
+    width: 13px;
+    height: 10px;
+    accent-color: black;
+}
+.log-in-card label{
+  font-size: 13px;
+  color: darkgreen;
+}

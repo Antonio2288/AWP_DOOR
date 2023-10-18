@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="logbook.css">
+</head>
+<body>
+<h2>
+SAINT JOSEPH'S COLLEGE OF BAGGAO
+</h2>
+<div class="topnav">
+  
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <img src="sjcbi.png" img class="sjcb" >
+  <h4>ADMIN</h4>
+  <a onclick="document.location='dashboard.html'" href="#">Dashboard</a>
+    <a onclick="document.location='login.html'" href="#">Profile</a>
+      <a onclick="document.location='login.html'" href="#">Buildings and Rooms</a>
+        <a onclick="document.location='login.html'" href="#">Reports</a>
+          <a onclick="document.location='logbook.html'" href="#">Logbook</a>
+            <a onclick="document.location='login.html'" href="#">Log out</a>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+   
+<div class="container">
+
+<h2>ZALDY CALIZO</h2>
+        <table>
+           <thead>
+                <tr>
+                   
+                    <th>ROOM</th>
+                    <th>DATE</th>
+                    <th>PURPOSE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                     <td>FHB201</td>
+                    <td>09/28/23</td>
+                    <td>CAPSTONE</td>
+                </tr>
+                <tr>
+                  
+                    <td>FHB202</td>
+                    <td>09/29/23</td>
+                    <td>ARDUINO</td>
+                </tr>
+                <tr>
+                  
+                    <td>FHB302</td>
+                    <td>09/30/23</td>
+                    <td>ICT</td>
+                </tr>
+                <tr>
+                 
+                    <td>FHB202</td>
+                    <td>11/01/23</td>
+                    <td>PLATFORM TECH.</td>
+                </tr>
+                <tr>
+                    
+                    <td>FHB202</td>
+                    <td>11/02/23</td>
+                    <td>ADVANCED WEB</td>
+                </tr>
+                                <tr>
+                     <td>FHB201</td>
+                    <td>11/28/23</td>
+                    <td>CAPSTONE</td>
+                </tr>
+                <tr>
+                  
+                    <td>FHB202</td>
+                    <td>11/29/23</td>
+                    <td>ARDUINO</td>
+                </tr>
+                <tr>
+                  
+                    <td>FHB302</td>
+                    <td>11/30/23</td>
+                    <td>ICT</td>
+                </tr>
+                <tr>
+                 
+                    <td>FHB202</td>
+                    <td>12/01/23</td>
+                    <td>PLATFORM TECH.</td>
+                </tr>
+                <tr>
+                    
+                    <td>FHB202</td>
+                    <td>13/02/23</td>
+                    <td>ADVANCED WEB</td>
+                </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+    <div class="search-bar">
+    <input type="text" id="search-input" placeholder="Search...">
+    <button onclick="searchLog()">Search</button>
+<a href="user.html">
+<script>
+    function searchLog() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("search-input");
+        filter = input.value.toUpperCase();
+        table = document.querySelector("table");
+        tr = table.getElementsByTagName("tr");
+
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[7];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>
+
+<style>
+  
+    .search-bar {
+        position: absolute;
+        top: 20px; 
+        right: 20px;
+        z-index: 1; 
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .search-bar input[type="text"] {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-right: 5px;
+    }
+    .search-bar button {
+        padding: 5px 10px;
+        background-color: #44950E;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+</style>
+</body>
+</html>
